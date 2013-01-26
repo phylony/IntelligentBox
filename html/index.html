@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+   <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Experimental CSS3 Animations for Image Transitions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Experimental CSS3 Animations for Image Transitions" />
+        <meta name="keywords" content="images, transition, animation, css3, jquery, 3d, 3d transform, webkit" />
+        <meta name="author" content="Pedro Botelho for Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style6.css" />
+		<script type="text/javascript" src="js/modernizr.custom.70748.js"></script>
+    </head>
+    <body>
+        <div class="container">
+			
+			
+			<div class="te-container">
+				<div class="te-controls">
+					<select id="type">
+						<option value="te-example1">Example 1</option>
+					</select>
+				</div>
+
+		  </div>
+        </div>
+        
+ <table style="position:absolute; top:20px" width="100%" border="0" cellspacing="0" cellpadding="0">
+ <tr style="height:80px;  overflow:hidden; overflow-style:auto">
+    <td align="center" height="80px" style="height:80px; overflow:hidden">	
+      <div id="AllOn" onClick="javascript:Utility(0)"> 
+        <p><img src="images/AOn.png" alt="" width="64" height="64"/> </p>
+        <p>全开</p>
+      </div>
+    </td>
+    <td align="center" height="80px" style="height:80px; overflow:hidden">      
+    <div id="AllOff" onClick="javascript:Utility(1)"> 
+        <p><img src="images/AOff.png" alt="" width="64" height="64"/> </p>
+        <p>全关</p>
+      </div>
+</td>
+    <td align="center" height="80px" style="height:80px; overflow:hidden">
+
+    </td>
+    <td align="center" height="80px" style="height:80px; overflow:hidden">          <div id="Refresh" onClick="javascript:Utility(2)"> 
+        <p><img src="images/refresh.png" alt=""/> </p>
+        <p>刷新</p>
+      </div>
+</td>
+   </tr>
+  <tr>
+    <td align="center">	
+    <div id="te-wrapper0" class="te-wrapper">
+      <div class="te-images"> <img src="images/off.png" alt=""/> <img src="images/on.png" alt=""/> </div>
+      <div class="te-cover"> <img src="images/off.png" alt=""/> 第一路</div>
+      <div class="te-transition">
+        <div class="te-front"></div>
+        <div class="te-back"></div>
+      </div>
+    </div></td>
+    <td align="center">                
+<div id="te-wrapper1" class="te-wrapper">
+      <div class="te-images"> <img src="images/off.png" alt=""/> <img src="images/on.png" alt=""/> </div>
+      <div class="te-cover"> <img src="images/off.png" alt=""/> 第二路</div>
+      <div class="te-transition">
+        <div class="te-front"></div>
+        <div class="te-back"></div>
+      </div>
+    </div></td>
+    <td align="center"><div id="te-wrapper2" class="te-wrapper">
+      <div class="te-images"> <img src="images/off.png" alt=""/> <img src="images/on.png" alt=""/> </div>
+      <div class="te-cover"> <img src="images/off.png" alt=""/> 第三路</div>
+      <div class="te-transition">
+        <div class="te-front"></div>
+        <div class="te-back"></div>
+      </div>
+    </div></td>
+    <td align="center"><div id="te-wrapper3" class="te-wrapper">
+      <div class="te-images"> <img src="images/off.png" alt=""/> <img src="images/on.png" alt=""/> </div>
+      <div class="te-cover"> <img src="images/off.png" alt=""/> 第四路</div>
+      <div class="te-transition">
+        <div class="te-front"></div>
+        <div class="te-back"></div>
+      </div>
+    </div></td>
+  </tr>
+  <tr>
+    <td align="center">
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center"><div id="te-wrapper4" class="te-wrapper">
+      <div class="te-images"> <img src="images/off.png" alt=""/> <img src="images/on.png" alt=""/> </div>
+      <div class="te-cover"> <img src="images/off.png" alt=""/>第五路 </div>
+      <div class="te-transition">
+        <div class="te-front"></div>
+        <div class="te-back"></div>
+      </div>
+    </div></td>
+    <td align="center"><div id="te-wrapper5" class="te-wrapper">
+      <div class="te-images"> <img src="images/off.png" alt=""/> <img src="images/on.png" alt=""/> </div>
+      <div class="te-cover"> <img src="images/off.png" alt=""/>第六路 </div>
+      <div class="te-transition">
+        <div class="te-front"></div>
+        <div class="te-back"></div>
+      </div>
+    </div></td>
+    <td align="center"><div id="te-wrapper6" class="te-wrapper">
+      <div class="te-images"> <img src="images/off.png" alt=""/> <img src="images/on.png" alt=""/> </div>
+      <div class="te-cover"> <img src="images/off.png" alt=""/>第七路 </div>
+      <div class="te-transition">
+        <div class="te-front"></div>
+        <div class="te-back"></div>
+      </div>
+    </div></td>
+    <td align="center"><div id="te-wrapper7" class="te-wrapper">
+      <div class="te-images"> <img src="images/off.png" alt=""/> <img src="images/on.png" alt=""/> </div>
+      <div class="te-cover"> <img src="images/off.png" alt=""/>第八路 </div>
+      <div class="te-transition">
+        <div class="te-front"></div>
+        <div class="te-back"></div>
+      </div>
+    </div></td>
+  </tr>
+  <tr>
+    <td align="center"></td>
+    <td align="center"></td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center"><div id="te-wrapper8" class="te-wrapper">
+      <div class="te-images"> <img src="images/off.png" alt=""/> <img src="images/on.png" alt=""/> </div>
+      <div class="te-cover"> <img src="images/off.png" alt=""/>第九路 </div>
+      <div class="te-transition">
+        <div class="te-front"></div>
+        <div class="te-back"></div>
+      </div>
+    </div></td>
+    <td align="center"><div id="te-wrapper9" class="te-wrapper">
+      <div class="te-images"> <img src="images/off.png" alt=""/> <img src="images/on.png" alt=""/> </div>
+      <div class="te-cover"> <img src="images/off.png" alt=""/>第十路 </div>
+      <div class="te-transition">
+        <div class="te-front"></div>
+        <div class="te-back"></div>
+      </div>
+    </div></td>
+    <td align="center"><div id="te-wrapper10" class="te-wrapper">
+      <div class="te-images"> <img src="images/off.png" alt=""/> <img src="images/on.png" alt=""/> </div>
+      <div class="te-cover"> <img src="images/off.png" alt=""/>第十一路 </div>
+      <div class="te-transition">
+        <div class="te-front"></div>
+        <div class="te-back"></div>
+      </div>
+    </div></td>
+    <td align="center"><div id="te-wrapper11" class="te-wrapper">
+      <div class="te-images"> <img src="images/off.png" alt=""/> <img src="images/on.png" alt=""/> </div>
+      <div class="te-cover"> <img src="images/off.png" alt=""/>第十二路 </div>
+      <div class="te-transition">
+        <div class="te-front"></div>
+        <div class="te-back"></div>
+      </div>
+    </div></td>
+  </tr>
+  <tr>
+    <td align="center"></td>
+    <td align="center"></td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.trans.js"></script>
+		<script type="text/javascript" src="js/demo.js"></script>
+        <script type="text/javascript">
+            
+			//灯界面对象保持,ios回调参数,不可更改,开灯函数openImg();不可更改，在自定义类过程中，请保持openImg()接口；
+			//jquery实现样例可参考jquery.trans.js文件；
+			//该页面实现了灯光的图片渐变切换，具体结构请参照table中的层结构；
+			function Utility(id){
+				switch(id){
+					case 0:
+						window.open("app://on");
+						break;
+					case 1:
+						window.open("app://off");
+						break;
+
+					case 2:	
+						window.open("app://refresh");
+						break;
+
+				}
+			}
+            var Lights=new Array;
+			
+            for(i=0;i<12;i++){
+                var tran;
+                tran=new TransitionEffects('#te-wrapper'+i);
+                tran.init();
+                tran.setID(i);
+                Lights.push(tran);
+            }
+            var tran;
+                tran=new TransitionEffects('#te-wrapper'+100);
+                tran.init();
+                tran.setID(100);
+            </script>
+    </body>
+</html>

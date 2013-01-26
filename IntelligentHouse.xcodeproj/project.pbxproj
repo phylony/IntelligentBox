@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F618B6F0167B63CF006B3864 /* NSString+Hex.mm in Sources */ = {isa = PBXBuildFile; fileRef = F618B6EF167B63CF006B3864 /* NSString+Hex.mm */; };
+		F6722BFA16AD81B1004FBEC1 /* IntelligentDataProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = F6722BF916AD81B1004FBEC1 /* IntelligentDataProtocol.m */; };
+		F68A13C3167D6EF7007B21CA /* IntelligentDeviceData.mm in Sources */ = {isa = PBXBuildFile; fileRef = F68A13C2167D6EF7007B21CA /* IntelligentDeviceData.mm */; };
+		F692C15D167CC78F00F31F11 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F692C15A167CC78F00F31F11 /* GCDAsyncSocket.m */; };
+		F692C15E167CC78F00F31F11 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F692C15C167CC78F00F31F11 /* GCDAsyncUdpSocket.m */; };
+		F692C160167CC7C900F31F11 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F692C15F167CC7C900F31F11 /* CFNetwork.framework */; };
+		F692C162167CC7D700F31F11 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F692C161167CC7D700F31F11 /* Security.framework */; };
+		F694855716AE373900038717 /* css in Resources */ = {isa = PBXBuildFile; fileRef = F694855316AE373900038717 /* css */; };
+		F694855816AE373900038717 /* images in Resources */ = {isa = PBXBuildFile; fileRef = F694855416AE373900038717 /* images */; };
+		F694855916AE373900038717 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = F694855516AE373900038717 /* index.html */; };
+		F694855A16AE373900038717 /* js in Resources */ = {isa = PBXBuildFile; fileRef = F694855616AE373900038717 /* js */; };
+		F69A31A416849D8200E6160F /* NSArray+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = F69A31A316849D8200E6160F /* NSArray+Hex.m */; };
+		F69D64431678BC330009269A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69D64421678BC330009269A /* UIKit.framework */; };
+		F69D64451678BC330009269A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69D64441678BC330009269A /* Foundation.framework */; };
+		F69D64471678BC330009269A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69D64461678BC330009269A /* CoreGraphics.framework */; };
+		F69D644D1678BC330009269A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F69D644B1678BC330009269A /* InfoPlist.strings */; };
+		F69D644F1678BC330009269A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F69D644E1678BC330009269A /* main.m */; };
+		F69D64531678BC330009269A /* IntelligentHouseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F69D64521678BC330009269A /* IntelligentHouseAppDelegate.m */; };
+		F69D64551678BC330009269A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F69D64541678BC330009269A /* Default.png */; };
+		F69D64571678BC330009269A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F69D64561678BC330009269A /* Default@2x.png */; };
+		F69D64591678BC330009269A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F69D64581678BC330009269A /* Default-568h@2x.png */; };
+		F69D645C1678BC330009269A /* IntelligentHouseViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F69D645B1678BC330009269A /* IntelligentHouseViewController.mm */; };
+		F69D645F1678BC330009269A /* IntelligentHouseViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = F69D645D1678BC330009269A /* IntelligentHouseViewController_iPhone.xib */; };
+		F69D64621678BC330009269A /* IntelligentHouseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F69D64601678BC330009269A /* IntelligentHouseViewController_iPad.xib */; };
+		F69D646C1678BC5C0009269A /* MKInfoPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = F69D646A1678BC5C0009269A /* MKInfoPanel.m */; };
+		F69D646D1678BC5C0009269A /* MKInfoPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = F69D646B1678BC5C0009269A /* MKInfoPanel.xib */; };
+		F69D647D1678BCC00009269A /* NGTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F69D64701678BCC00009269A /* NGTabBar.m */; };
+		F69D647E1678BCC00009269A /* NGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F69D64721678BCC00009269A /* NGTabBarController.m */; };
+		F69D647F1678BCC00009269A /* NGTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F69D64761678BCC00009269A /* NGTabBarItem.m */; };
+		F69D64801678BCC00009269A /* UINavigationController+NGTabBarNavigationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F69D647A1678BCC00009269A /* UINavigationController+NGTabBarNavigationDelegate.m */; };
+		F69D64811678BCC00009269A /* UIViewController+NGTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F69D647C1678BCC00009269A /* UIViewController+NGTabBarItem.m */; };
+		F69D64841678BD450009269A /* IHTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F69D64831678BD450009269A /* IHTabBarViewController.m */; };
+		F69D64861678BEA20009269A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69D64851678BEA20009269A /* OpenGLES.framework */; };
+		F69D64881678BEB50009269A /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69D64871678BEB50009269A /* CoreImage.framework */; };
+		F69D648A1678BEC30009269A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69D64891678BEC30009269A /* QuartzCore.framework */; };
+		F69D648E1678D9C00009269A /* IntelligentAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F69D648C1678D9BF0009269A /* IntelligentAboutViewController.m */; };
+		F69D648F1678D9C00009269A /* IntelligentAboutViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F69D648D1678D9BF0009269A /* IntelligentAboutViewController_iPad.xib */; };
+		F69D64911678DA180009269A /* IntelligentAboutViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = F69D64901678DA180009269A /* IntelligentAboutViewController_iPhone.xib */; };
+		F69D64991678DEC20009269A /* IntelligentSocket.mm in Sources */ = {isa = PBXBuildFile; fileRef = F69D64981678DEC20009269A /* IntelligentSocket.mm */; };
+		F69DEC4716B3CD630029DD7D /* off.png in Resources */ = {isa = PBXBuildFile; fileRef = F69DEC4516B3CD630029DD7D /* off.png */; };
+		F69DEC4816B3CD630029DD7D /* on.png in Resources */ = {isa = PBXBuildFile; fileRef = F69DEC4616B3CD630029DD7D /* on.png */; };
+		F69DEC4D16B3CEFB0029DD7D /* IntelligentSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F69DEC4B16B3CEFB0029DD7D /* IntelligentSettingViewController.m */; };
+		F69DEC4E16B3CEFB0029DD7D /* IntelligentSettingViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F69DEC4C16B3CEFB0029DD7D /* IntelligentSettingViewController_iPad.xib */; };
+		F69DEC5016B3CF530029DD7D /* IntelligentSettingViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = F69DEC4F16B3CF530029DD7D /* IntelligentSettingViewController_iPhone.xib */; };
+		F69DEC5516B3EF2F0029DD7D /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = F69DEC5116B3EF2F0029DD7D /* icon57.png */; };
+		F69DEC5616B3EF2F0029DD7D /* icon72.png in Resources */ = {isa = PBXBuildFile; fileRef = F69DEC5216B3EF2F0029DD7D /* icon72.png */; };
+		F69DEC5716B3EF2F0029DD7D /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = F69DEC5316B3EF2F0029DD7D /* icon114.png */; };
+		F69DEC5816B3EF2F0029DD7D /* icon144.png in Resources */ = {isa = PBXBuildFile; fileRef = F69DEC5416B3EF2F0029DD7D /* icon144.png */; };
+		F69DEC8316B42EEF0029DD7D /* redlamp.png in Resources */ = {isa = PBXBuildFile; fileRef = F69DEC8216B42EEF0029DD7D /* redlamp.png */; };
+		F6AD689016820B74004E81AF /* IPSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6AD688F16820B74004E81AF /* IPSetting.plist */; };
+		F6AD68931682131E004E81AF /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F6AD68921682131E004E81AF /* icon.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F618B6EE167B63CF006B3864 /* NSString+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Hex.h"; path = "HexWraper/NSString+Hex.h"; sourceTree = SOURCE_ROOT; };
+		F618B6EF167B63CF006B3864 /* NSString+Hex.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "NSString+Hex.mm"; path = "HexWraper/NSString+Hex.mm"; sourceTree = SOURCE_ROOT; };
+		F6722BF816AD81B1004FBEC1 /* IntelligentDataProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IntelligentDataProtocol.h; path = Socket/IntelligentDataProtocol.h; sourceTree = SOURCE_ROOT; };
+		F6722BF916AD81B1004FBEC1 /* IntelligentDataProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IntelligentDataProtocol.m; path = Socket/IntelligentDataProtocol.m; sourceTree = SOURCE_ROOT; };
+		F68A13C1167D6EF7007B21CA /* IntelligentDeviceData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IntelligentDeviceData.h; path = Socket/IntelligentDeviceData.h; sourceTree = SOURCE_ROOT; };
+		F68A13C2167D6EF7007B21CA /* IntelligentDeviceData.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = IntelligentDeviceData.mm; path = Socket/IntelligentDeviceData.mm; sourceTree = SOURCE_ROOT; };
+		F692C159167CC78F00F31F11 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Socket/GCDAsyncSocket.h; sourceTree = SOURCE_ROOT; };
+		F692C15A167CC78F00F31F11 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Socket/GCDAsyncSocket.m; sourceTree = SOURCE_ROOT; };
+		F692C15B167CC78F00F31F11 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Socket/GCDAsyncUdpSocket.h; sourceTree = SOURCE_ROOT; };
+		F692C15C167CC78F00F31F11 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Socket/GCDAsyncUdpSocket.m; sourceTree = SOURCE_ROOT; };
+		F692C15F167CC7C900F31F11 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F692C161167CC7D700F31F11 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F694855316AE373900038717 /* css */ = {isa = PBXFileReference; lastKnownFileType = folder; name = css; path = html/css; sourceTree = SOURCE_ROOT; };
+		F694855416AE373900038717 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = html/images; sourceTree = SOURCE_ROOT; };
+		F694855516AE373900038717 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = html/index.html; sourceTree = SOURCE_ROOT; };
+		F694855616AE373900038717 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; name = js; path = html/js; sourceTree = SOURCE_ROOT; };
+		F69A31A216849D8200E6160F /* NSArray+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Hex.h"; path = "HexWraper/NSArray+Hex.h"; sourceTree = SOURCE_ROOT; };
+		F69A31A316849D8200E6160F /* NSArray+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Hex.m"; path = "HexWraper/NSArray+Hex.m"; sourceTree = SOURCE_ROOT; };
+		F69D643E1678BC330009269A /* IntelligentHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelligentHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F69D64421678BC330009269A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F69D64441678BC330009269A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F69D64461678BC330009269A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F69D644A1678BC330009269A /* IntelligentHouse-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IntelligentHouse-Info.plist"; sourceTree = "<group>"; };
+		F69D644C1678BC330009269A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F69D644E1678BC330009269A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F69D64501678BC330009269A /* IntelligentHouse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IntelligentHouse-Prefix.pch"; sourceTree = "<group>"; };
+		F69D64511678BC330009269A /* IntelligentHouseAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntelligentHouseAppDelegate.h; sourceTree = "<group>"; };
+		F69D64521678BC330009269A /* IntelligentHouseAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntelligentHouseAppDelegate.m; sourceTree = "<group>"; };
+		F69D64541678BC330009269A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F69D64561678BC330009269A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F69D64581678BC330009269A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F69D645A1678BC330009269A /* IntelligentHouseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntelligentHouseViewController.h; sourceTree = "<group>"; };
+		F69D645B1678BC330009269A /* IntelligentHouseViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = IntelligentHouseViewController.mm; sourceTree = "<group>"; };
+		F69D645E1678BC330009269A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/IntelligentHouseViewController_iPhone.xib; sourceTree = "<group>"; };
+		F69D64611678BC330009269A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/IntelligentHouseViewController_iPad.xib; sourceTree = "<group>"; };
+		F69D64691678BC5C0009269A /* MKInfoPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKInfoPanel.h; sourceTree = "<group>"; };
+		F69D646A1678BC5C0009269A /* MKInfoPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKInfoPanel.m; sourceTree = "<group>"; };
+		F69D646B1678BC5C0009269A /* MKInfoPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKInfoPanel.xib; sourceTree = "<group>"; };
+		F69D646F1678BCC00009269A /* NGTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTabBar.h; sourceTree = "<group>"; };
+		F69D64701678BCC00009269A /* NGTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGTabBar.m; sourceTree = "<group>"; };
+		F69D64711678BCC00009269A /* NGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTabBarController.h; sourceTree = "<group>"; };
+		F69D64721678BCC00009269A /* NGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGTabBarController.m; sourceTree = "<group>"; };
+		F69D64731678BCC00009269A /* NGTabBarControllerAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTabBarControllerAnimation.h; sourceTree = "<group>"; };
+		F69D64741678BCC00009269A /* NGTabBarControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTabBarControllerDelegate.h; sourceTree = "<group>"; };
+		F69D64751678BCC00009269A /* NGTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTabBarItem.h; sourceTree = "<group>"; };
+		F69D64761678BCC00009269A /* NGTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGTabBarItem.m; sourceTree = "<group>"; };
+		F69D64771678BCC00009269A /* NGTabBarPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTabBarPosition.h; sourceTree = "<group>"; };
+		F69D64781678BCC00009269A /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		F69D64791678BCC00009269A /* UINavigationController+NGTabBarNavigationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+NGTabBarNavigationDelegate.h"; sourceTree = "<group>"; };
+		F69D647A1678BCC00009269A /* UINavigationController+NGTabBarNavigationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+NGTabBarNavigationDelegate.m"; sourceTree = "<group>"; };
+		F69D647B1678BCC00009269A /* UIViewController+NGTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NGTabBarItem.h"; sourceTree = "<group>"; };
+		F69D647C1678BCC00009269A /* UIViewController+NGTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NGTabBarItem.m"; sourceTree = "<group>"; };
+		F69D64821678BD450009269A /* IHTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHTabBarViewController.h; sourceTree = "<group>"; };
+		F69D64831678BD450009269A /* IHTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHTabBarViewController.m; sourceTree = "<group>"; };
+		F69D64851678BEA20009269A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F69D64871678BEB50009269A /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		F69D64891678BEC30009269A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F69D648B1678D9BE0009269A /* IntelligentAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntelligentAboutViewController.h; sourceTree = "<group>"; };
+		F69D648C1678D9BF0009269A /* IntelligentAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntelligentAboutViewController.m; sourceTree = "<group>"; };
+		F69D648D1678D9BF0009269A /* IntelligentAboutViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntelligentAboutViewController_iPad.xib; sourceTree = "<group>"; };
+		F69D64901678DA180009269A /* IntelligentAboutViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntelligentAboutViewController_iPhone.xib; sourceTree = "<group>"; };
+		F69D64971678DEC20009269A /* IntelligentSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IntelligentSocket.h; path = Socket/IntelligentSocket.h; sourceTree = SOURCE_ROOT; };
+		F69D64981678DEC20009269A /* IntelligentSocket.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = IntelligentSocket.mm; path = Socket/IntelligentSocket.mm; sourceTree = SOURCE_ROOT; };
+		F69DEC4516B3CD630029DD7D /* off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = off.png; sourceTree = "<group>"; };
+		F69DEC4616B3CD630029DD7D /* on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = on.png; sourceTree = "<group>"; };
+		F69DEC4A16B3CEFB0029DD7D /* IntelligentSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntelligentSettingViewController.h; sourceTree = "<group>"; };
+		F69DEC4B16B3CEFB0029DD7D /* IntelligentSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntelligentSettingViewController.m; sourceTree = "<group>"; };
+		F69DEC4C16B3CEFB0029DD7D /* IntelligentSettingViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntelligentSettingViewController_iPad.xib; sourceTree = "<group>"; };
+		F69DEC4F16B3CF530029DD7D /* IntelligentSettingViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntelligentSettingViewController_iPhone.xib; sourceTree = "<group>"; };
+		F69DEC5116B3EF2F0029DD7D /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57.png; sourceTree = "<group>"; };
+		F69DEC5216B3EF2F0029DD7D /* icon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon72.png; sourceTree = "<group>"; };
+		F69DEC5316B3EF2F0029DD7D /* icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon114.png; sourceTree = "<group>"; };
+		F69DEC5416B3EF2F0029DD7D /* icon144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon144.png; sourceTree = "<group>"; };
+		F69DEC8216B42EEF0029DD7D /* redlamp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redlamp.png; path = Resource/redlamp.png; sourceTree = "<group>"; };
+		F6AD688F16820B74004E81AF /* IPSetting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = IPSetting.plist; sourceTree = "<group>"; };
+		F6AD68921682131E004E81AF /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F69D643B1678BC330009269A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F692C162167CC7D700F31F11 /* Security.framework in Frameworks */,
+				F692C160167CC7C900F31F11 /* CFNetwork.framework in Frameworks */,
+				F69D648A1678BEC30009269A /* QuartzCore.framework in Frameworks */,
+				F69D64881678BEB50009269A /* CoreImage.framework in Frameworks */,
+				F69D64861678BEA20009269A /* OpenGLES.framework in Frameworks */,
+				F69D64431678BC330009269A /* UIKit.framework in Frameworks */,
+				F69D64451678BC330009269A /* Foundation.framework in Frameworks */,
+				F69D64471678BC330009269A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F694855116AE372D00038717 /* Html */ = {
+			isa = PBXGroup;
+			children = (
+				F694855316AE373900038717 /* css */,
+				F694855416AE373900038717 /* images */,
+				F694855516AE373900038717 /* index.html */,
+				F694855616AE373900038717 /* js */,
+			);
+			name = Html;
+			sourceTree = "<group>";
+		};
+		F69D64331678BC330009269A = {
+			isa = PBXGroup;
+			children = (
+				F69DEC5116B3EF2F0029DD7D /* icon57.png */,
+				F69DEC5216B3EF2F0029DD7D /* icon72.png */,
+				F69DEC5316B3EF2F0029DD7D /* icon114.png */,
+				F69DEC5416B3EF2F0029DD7D /* icon144.png */,
+				F69DEC8216B42EEF0029DD7D /* redlamp.png */,
+				F6AD68921682131E004E81AF /* icon.jpg */,
+				F6AD688F16820B74004E81AF /* IPSetting.plist */,
+				F692C161167CC7D700F31F11 /* Security.framework */,
+				F692C15F167CC7C900F31F11 /* CFNetwork.framework */,
+				F69D64481678BC330009269A /* IntelligentHouse */,
+				F69D64411678BC330009269A /* Frameworks */,
+				F69D643F1678BC330009269A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F69D643F1678BC330009269A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F69D643E1678BC330009269A /* IntelligentHouse.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F69D64411678BC330009269A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F69D64891678BEC30009269A /* QuartzCore.framework */,
+				F69D64871678BEB50009269A /* CoreImage.framework */,
+				F69D64851678BEA20009269A /* OpenGLES.framework */,
+				F69D64421678BC330009269A /* UIKit.framework */,
+				F69D64441678BC330009269A /* Foundation.framework */,
+				F69D64461678BC330009269A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F69D64481678BC330009269A /* IntelligentHouse */ = {
+			isa = PBXGroup;
+			children = (
+				F69DEC4416B3CD630029DD7D /* Resource */,
+				F694855116AE372D00038717 /* Html */,
+				F69D64961678DE8D0009269A /* Socket */,
+				F69D64921678DDCD0009269A /* HexWraper */,
+				F69D646E1678BCC00009269A /* NGTabBarController */,
+				F69D64681678BC5C0009269A /* Notify */,
+				F69D64821678BD450009269A /* IHTabBarViewController.h */,
+				F69D64831678BD450009269A /* IHTabBarViewController.m */,
+				F69D64511678BC330009269A /* IntelligentHouseAppDelegate.h */,
+				F69D64521678BC330009269A /* IntelligentHouseAppDelegate.m */,
+				F69DEC4A16B3CEFB0029DD7D /* IntelligentSettingViewController.h */,
+				F69DEC4B16B3CEFB0029DD7D /* IntelligentSettingViewController.m */,
+				F69DEC4C16B3CEFB0029DD7D /* IntelligentSettingViewController_iPad.xib */,
+				F69DEC4F16B3CF530029DD7D /* IntelligentSettingViewController_iPhone.xib */,
+				F69D645A1678BC330009269A /* IntelligentHouseViewController.h */,
+				F69D645B1678BC330009269A /* IntelligentHouseViewController.mm */,
+				F69D645D1678BC330009269A /* IntelligentHouseViewController_iPhone.xib */,
+				F69D64601678BC330009269A /* IntelligentHouseViewController_iPad.xib */,
+				F69D648B1678D9BE0009269A /* IntelligentAboutViewController.h */,
+				F69D648C1678D9BF0009269A /* IntelligentAboutViewController.m */,
+				F69D648D1678D9BF0009269A /* IntelligentAboutViewController_iPad.xib */,
+				F69D64901678DA180009269A /* IntelligentAboutViewController_iPhone.xib */,
+				F69D64491678BC330009269A /* Supporting Files */,
+			);
+			path = IntelligentHouse;
+			sourceTree = "<group>";
+		};
+		F69D64491678BC330009269A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F69D644A1678BC330009269A /* IntelligentHouse-Info.plist */,
+				F69D644B1678BC330009269A /* InfoPlist.strings */,
+				F69D644E1678BC330009269A /* main.m */,
+				F69D64501678BC330009269A /* IntelligentHouse-Prefix.pch */,
+				F69D64541678BC330009269A /* Default.png */,
+				F69D64561678BC330009269A /* Default@2x.png */,
+				F69D64581678BC330009269A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F69D64681678BC5C0009269A /* Notify */ = {
+			isa = PBXGroup;
+			children = (
+				F69D64691678BC5C0009269A /* MKInfoPanel.h */,
+				F69D646A1678BC5C0009269A /* MKInfoPanel.m */,
+				F69D646B1678BC5C0009269A /* MKInfoPanel.xib */,
+			);
+			path = Notify;
+			sourceTree = SOURCE_ROOT;
+		};
+		F69D646E1678BCC00009269A /* NGTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				F69D646F1678BCC00009269A /* NGTabBar.h */,
+				F69D64701678BCC00009269A /* NGTabBar.m */,
+				F69D64711678BCC00009269A /* NGTabBarController.h */,
+				F69D64721678BCC00009269A /* NGTabBarController.m */,
+				F69D64731678BCC00009269A /* NGTabBarControllerAnimation.h */,
+				F69D64741678BCC00009269A /* NGTabBarControllerDelegate.h */,
+				F69D64751678BCC00009269A /* NGTabBarItem.h */,
+				F69D64761678BCC00009269A /* NGTabBarItem.m */,
+				F69D64771678BCC00009269A /* NGTabBarPosition.h */,
+				F69D64781678BCC00009269A /* Prefix.pch */,
+				F69D64791678BCC00009269A /* UINavigationController+NGTabBarNavigationDelegate.h */,
+				F69D647A1678BCC00009269A /* UINavigationController+NGTabBarNavigationDelegate.m */,
+				F69D647B1678BCC00009269A /* UIViewController+NGTabBarItem.h */,
+				F69D647C1678BCC00009269A /* UIViewController+NGTabBarItem.m */,
+			);
+			path = NGTabBarController;
+			sourceTree = SOURCE_ROOT;
+		};
+		F69D64921678DDCD0009269A /* HexWraper */ = {
+			isa = PBXGroup;
+			children = (
+				F618B6EE167B63CF006B3864 /* NSString+Hex.h */,
+				F618B6EF167B63CF006B3864 /* NSString+Hex.mm */,
+				F69A31A216849D8200E6160F /* NSArray+Hex.h */,
+				F69A31A316849D8200E6160F /* NSArray+Hex.m */,
+			);
+			name = HexWraper;
+			sourceTree = "<group>";
+		};
+		F69D64961678DE8D0009269A /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				F692C159167CC78F00F31F11 /* GCDAsyncSocket.h */,
+				F692C15A167CC78F00F31F11 /* GCDAsyncSocket.m */,
+				F692C15B167CC78F00F31F11 /* GCDAsyncUdpSocket.h */,
+				F692C15C167CC78F00F31F11 /* GCDAsyncUdpSocket.m */,
+				F69D64971678DEC20009269A /* IntelligentSocket.h */,
+				F69D64981678DEC20009269A /* IntelligentSocket.mm */,
+				F68A13C1167D6EF7007B21CA /* IntelligentDeviceData.h */,
+				F68A13C2167D6EF7007B21CA /* IntelligentDeviceData.mm */,
+				F6722BF816AD81B1004FBEC1 /* IntelligentDataProtocol.h */,
+				F6722BF916AD81B1004FBEC1 /* IntelligentDataProtocol.m */,
+			);
+			name = Socket;
+			sourceTree = "<group>";
+		};
+		F69DEC4416B3CD630029DD7D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F69DEC4516B3CD630029DD7D /* off.png */,
+				F69DEC4616B3CD630029DD7D /* on.png */,
+			);
+			path = Resource;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F69D643D1678BC330009269A /* IntelligentHouse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F69D64651678BC330009269A /* Build configuration list for PBXNativeTarget "IntelligentHouse" */;
+			buildPhases = (
+				F69D643A1678BC330009269A /* Sources */,
+				F69D643B1678BC330009269A /* Frameworks */,
+				F69D643C1678BC330009269A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntelligentHouse;
+			productName = IntelligentHouse;
+			productReference = F69D643E1678BC330009269A /* IntelligentHouse.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F69D64351678BC330009269A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IntelligentHouse;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = phylony;
+			};
+			buildConfigurationList = F69D64381678BC330009269A /* Build configuration list for PBXProject "IntelligentHouse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F69D64331678BC330009269A;
+			productRefGroup = F69D643F1678BC330009269A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F69D643D1678BC330009269A /* IntelligentHouse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F69D643C1678BC330009269A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F69D644D1678BC330009269A /* InfoPlist.strings in Resources */,
+				F69D64551678BC330009269A /* Default.png in Resources */,
+				F69D64571678BC330009269A /* Default@2x.png in Resources */,
+				F69D64591678BC330009269A /* Default-568h@2x.png in Resources */,
+				F69D645F1678BC330009269A /* IntelligentHouseViewController_iPhone.xib in Resources */,
+				F69D64621678BC330009269A /* IntelligentHouseViewController_iPad.xib in Resources */,
+				F69D646D1678BC5C0009269A /* MKInfoPanel.xib in Resources */,
+				F69D648F1678D9C00009269A /* IntelligentAboutViewController_iPad.xib in Resources */,
+				F69D64911678DA180009269A /* IntelligentAboutViewController_iPhone.xib in Resources */,
+				F6AD689016820B74004E81AF /* IPSetting.plist in Resources */,
+				F6AD68931682131E004E81AF /* icon.jpg in Resources */,
+				F694855716AE373900038717 /* css in Resources */,
+				F694855816AE373900038717 /* images in Resources */,
+				F694855916AE373900038717 /* index.html in Resources */,
+				F694855A16AE373900038717 /* js in Resources */,
+				F69DEC4716B3CD630029DD7D /* off.png in Resources */,
+				F69DEC4816B3CD630029DD7D /* on.png in Resources */,
+				F69DEC4E16B3CEFB0029DD7D /* IntelligentSettingViewController_iPad.xib in Resources */,
+				F69DEC5016B3CF530029DD7D /* IntelligentSettingViewController_iPhone.xib in Resources */,
+				F69DEC5516B3EF2F0029DD7D /* icon57.png in Resources */,
+				F69DEC5616B3EF2F0029DD7D /* icon72.png in Resources */,
+				F69DEC5716B3EF2F0029DD7D /* icon114.png in Resources */,
+				F69DEC5816B3EF2F0029DD7D /* icon144.png in Resources */,
+				F69DEC8316B42EEF0029DD7D /* redlamp.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F69D643A1678BC330009269A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F69D644F1678BC330009269A /* main.m in Sources */,
+				F69D64531678BC330009269A /* IntelligentHouseAppDelegate.m in Sources */,
+				F69D645C1678BC330009269A /* IntelligentHouseViewController.mm in Sources */,
+				F69D646C1678BC5C0009269A /* MKInfoPanel.m in Sources */,
+				F69D647D1678BCC00009269A /* NGTabBar.m in Sources */,
+				F69D647E1678BCC00009269A /* NGTabBarController.m in Sources */,
+				F69D647F1678BCC00009269A /* NGTabBarItem.m in Sources */,
+				F69D64801678BCC00009269A /* UINavigationController+NGTabBarNavigationDelegate.m in Sources */,
+				F69D64811678BCC00009269A /* UIViewController+NGTabBarItem.m in Sources */,
+				F69D64841678BD450009269A /* IHTabBarViewController.m in Sources */,
+				F69D648E1678D9C00009269A /* IntelligentAboutViewController.m in Sources */,
+				F69D64991678DEC20009269A /* IntelligentSocket.mm in Sources */,
+				F618B6F0167B63CF006B3864 /* NSString+Hex.mm in Sources */,
+				F692C15D167CC78F00F31F11 /* GCDAsyncSocket.m in Sources */,
+				F692C15E167CC78F00F31F11 /* GCDAsyncUdpSocket.m in Sources */,
+				F68A13C3167D6EF7007B21CA /* IntelligentDeviceData.mm in Sources */,
+				F69A31A416849D8200E6160F /* NSArray+Hex.m in Sources */,
+				F6722BFA16AD81B1004FBEC1 /* IntelligentDataProtocol.m in Sources */,
+				F69DEC4D16B3CEFB0029DD7D /* IntelligentSettingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F69D644B1678BC330009269A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F69D644C1678BC330009269A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F69D645D1678BC330009269A /* IntelligentHouseViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F69D645E1678BC330009269A /* en */,
+			);
+			name = IntelligentHouseViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		F69D64601678BC330009269A /* IntelligentHouseViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F69D64611678BC330009269A /* en */,
+			);
+			name = IntelligentHouseViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F69D64631678BC330009269A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F69D64641678BC330009269A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F69D64661678BC330009269A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IntelligentHouse/IntelligentHouse-Prefix.pch";
+				INFOPLIST_FILE = "IntelligentHouse/IntelligentHouse-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F69D64671678BC330009269A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IntelligentHouse/IntelligentHouse-Prefix.pch";
+				INFOPLIST_FILE = "IntelligentHouse/IntelligentHouse-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F69D64381678BC330009269A /* Build configuration list for PBXProject "IntelligentHouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F69D64631678BC330009269A /* Debug */,
+				F69D64641678BC330009269A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F69D64651678BC330009269A /* Build configuration list for PBXNativeTarget "IntelligentHouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F69D64661678BC330009269A /* Debug */,
+				F69D64671678BC330009269A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F69D64351678BC330009269A /* Project object */;
+}
